@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="cours">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="description">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="intitule" type="xsd:string"/>
+							<xsd:element name="UE_correspondant">
+								<xsd:complexType>
+									<xsd:simpleContent>
+										<xsd:extension base="xsd:string">
+											<xsd:attribute name="credit" type="xsd:positiveInteger" use="required"/>
+											<xsd:attribute name="coef" type="xsd:positiveInteger" use="required"/>
+										</xsd:extension>
+									</xsd:simpleContent>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="volume_horaire" type="xsd:string"/>
+							<xsd:element name="semestre" type="xsd:string"/>
+							<xsd:element name="niveau" type="xsd:string"/>
+							<xsd:element name="prerequis" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+
+				<xsd:element name="renseignements_enseignants">
+					<xsd:complexType>
+						<xsd:element name="enseignant">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="prenom_s" type="xsd:string"/>
+									<xsd:element name="nom" type="xsd:string"/>
+									<xsd:element name="adresse_bureau" type="xsd:string"/>
+									<xsd:element name="courriel" type="xsd:string"/>
+									<xsd:element name="heures_bureau" type="xsd:string"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:attribute name="effectif" type="xsd:positiveInteger"/>
+					</xsd:complexType>
+				</xsd:element>
+
+				<xsd:element name="infos_lieu_horaire">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="salle" type="xsd:string"/>
+							<xsd:element name="heure_debut" type="xsd:string"/>
+							<xsd:element name="heure_fin" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

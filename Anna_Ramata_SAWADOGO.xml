@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE cours SYSTEM "ServicesWeb\Anna_Ramata_SAWADOGO.dtd">
+
+<cours>
+	<description>
+		<intitule>Analyse et traitement de donnees massives</intitule>
+		<UE_correspondant credit = "6" coef = "2">Intelligence artificielle</UE_correspondant>
+		<volume_horaire>60</volume_horaire>
+		<semestre>3</semestre>
+		<niveau>Master 2</niveau>
+		<prerequis>Aucune</prerequis>
+	</description>
+	<renseignements_enseignants effectif = "2">
+		<enseignant>
+			<prenom_s>Mouhamadou</prenom_s>
+			<nom>THIAM</nom>
+			<adresse_bureau>Administration</adresse_bureau>
+			<courriel>mthiam@gmail.com</courriel>
+			<heures_bureau>08h-12h</heures_bureau>
+		</enseignant>
+
+		<enseignant>
+			<prenom_s>Modou</prenom_s>
+			<nom>MBOUP</nom>
+			<adresse_bureau>Administration</adresse_bureau>
+			<courriel>mmboup@gmail.com</courriel>
+			<heures_bureau>09h-13h</heures_bureau>
+		</enseignant>
+	</renseignements_enseignants>
+	<infos_lieu_horaire>
+		<salle>5</salle>
+		<heure_debut>09h</heure_debut>
+		<heure_fin>12h</heure_fin>
+	</infos_lieu_horaire>
+</cours>

@@ -1,0 +1,22 @@
+<!ELEMENT cours (description, renseignements_enseignants, infos_lieu_horaire)>
+	<!ELEMENT description (intitule, UE_correspondant, volume_horaire, semestre, niveau, prerequis)>
+		<!ELEMENT intitule (#PCDATA)>
+		<!ELEMENT UE_correspondant (#PCDATA)>
+			<!ATTLIST UE_correspondant credit CDATA #REQUIRED>
+			<!ATTLIST UE_correspondant coef CDATA #REQUIRED>
+		<!ELEMENT volume_horaire (#PCDATA)>
+		<!ELEMENT semestre (#PCDATA)>
+		<!ELEMENT niveau (#PCDATA)>
+		<!ELEMENT prerequis (#PCDATA)>
+	<!ELEMENT renseignements_enseignants (enseignant +)>
+		<!ATTLIST renseignements_enseignants effectif "1" CDATA #IMPLIED>
+		<!ELEMENT enseignant (prenom_s, nom, adresse_bureau, courriel +, heures_bureau)>
+			<!ELEMENT prenom_s (#PCDATA)>
+			<!ELEMENT nom (#PCDATA)>
+			<!ELEMENT adresse_bureau (#PCDATA)>
+			<!ELEMENT courriel (#PCDATA)>
+			<!ELEMENT heures_bureau (#PCDATA)>
+	<!ELEMENT infos_lieu_horaire (salle, heure_debut, heure_fin)>
+		<!ELEMENT salle (#PCDATA)>
+		<!ELEMENT heure_debut (#PCDATA)>
+		<!ELEMENT heure_fin (#PCDATA)>
